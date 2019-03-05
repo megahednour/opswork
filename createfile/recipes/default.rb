@@ -12,8 +12,13 @@ directory "/srv/www/shared" do
  action :create
 end
 
-cookbook_file "/srv/www/shared/data.json" do
- source "data.json"
- mode 0644
- action :create_if_missing
+
+template "/srv/www/shared/data.json" do
+  source "data.json.erb"
+  mode 0644
+  variables(
+    :a_boolean_var => true,
+    :a_string_var => "some string"
+  )
+  only_if {node['createfile']['install_file']}
 end
