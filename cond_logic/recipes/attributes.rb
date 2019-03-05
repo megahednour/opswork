@@ -3,7 +3,7 @@
     mode node['cond_logic']['mode']
     owner node['cond_logic']['owner']
     group node['cond_logic']['group']
-    recusrive true
+    recursive true
     action :create
  end
 end 
