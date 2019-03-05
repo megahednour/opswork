@@ -1,0 +1,7 @@
+---
+hostname: 127.0.0.1
+port: '2200'
+username: vagrant
+ssh_key: "/Users/nourmegahed/Desktop/Devops/chef/Learning Chef /opsworks_cookbooks/createdir-ec2/.kitchen/kitchen-vagrant/default-ubuntu-trusty64/.vagrant/machines/default/virtualbox/private_key"
+last_action: converge
+last_error: Kitchen::ActionFailed

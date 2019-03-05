@@ -1,0 +1,58 @@
+I, [2019-02-19T15:41:46.836347 #70918]  INFO -- default-amazon: -----> Converging <default-amazon>...
+I, [2019-02-19T15:41:46.836944 #70918]  INFO -- default-amazon: Preparing files for transfer
+I, [2019-02-19T15:41:46.837074 #70918]  INFO -- default-amazon: Preparing dna.json
+I, [2019-02-19T15:41:46.837785 #70918]  INFO -- default-amazon: Preparing current project directory as a cookbook
+I, [2019-02-19T15:41:46.886471 #70918]  INFO -- default-amazon: Removing non-cookbook files before transfer
+I, [2019-02-19T15:41:46.891443 #70918]  INFO -- default-amazon: Preparing solo.rb
+I, [2019-02-19T15:41:46.894717 #70918]  INFO -- default-amazon: [SSH] connection failed, retrying in 1 seconds (#<Errno::ECONNREFUSED: Connection refused - connect(2) for [::1]:22>)
+I, [2019-02-19T15:41:47.900051 #70918]  INFO -- default-amazon: [SSH] connection failed, retrying in 1 seconds (#<Errno::ECONNREFUSED: Connection refused - connect(2) for [::1]:22>)
+I, [2019-02-19T15:41:48.903692 #70918]  INFO -- default-amazon: [SSH] connection failed, retrying in 1 seconds (#<Errno::ECONNREFUSED: Connection refused - connect(2) for [::1]:22>)
+I, [2019-02-19T15:41:49.910078 #70918]  INFO -- default-amazon: [SSH] connection failed, retrying in 1 seconds (#<Errno::ECONNREFUSED: Connection refused - connect(2) for [::1]:22>)
+W, [2019-02-19T15:41:50.916977 #70918]  WARN -- default-amazon: [SSH] connection failed, terminating (#<Errno::ECONNREFUSED: Connection refused - connect(2) for [::1]:22>)
+E, [2019-02-19T15:41:50.920486 #70918] ERROR -- default-amazon: Converge failed on instance <default-amazon>.
+E, [2019-02-19T15:41:50.920645 #70918] ERROR -- default-amazon: ------Exception-------
+E, [2019-02-19T15:41:50.920687 #70918] ERROR -- default-amazon: Class: Kitchen::ActionFailed
+E, [2019-02-19T15:41:50.920719 #70918] ERROR -- default-amazon: Message: SSH session could not be established
+E, [2019-02-19T15:41:50.920749 #70918] ERROR -- default-amazon: ----------------------
+E, [2019-02-19T15:41:50.920779 #70918] ERROR -- default-amazon: ------Backtrace-------
+E, [2019-02-19T15:41:50.920808 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:95:in `rescue in call'
+E, [2019-02-19T15:41:50.920839 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:71:in `call'
+E, [2019-02-19T15:41:50.920876 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2019-02-19T15:41:50.920912 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:551:in `synchronize_or_call'
+E, [2019-02-19T15:41:50.920943 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-02-19T15:41:50.920964 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2019-02-19T15:41:50.921007 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2019-02-19T15:41:50.921029 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2019-02-19T15:41:50.921050 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-02-19T15:41:50.921072 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-02-19T15:41:50.921093 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-02-19T15:41:50.921114 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2019-02-19T15:41:50.921160 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-02-19T15:41:50.921183 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:140:in `converge'
+E, [2019-02-19T15:41:50.921204 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-02-19T15:41:50.921225 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-02-19T15:41:50.921246 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-02-19T15:41:50.921267 #70918] ERROR -- default-amazon: ----End Backtrace-----
+E, [2019-02-19T15:41:50.921288 #70918] ERROR -- default-amazon: ---Nested Exception---
+E, [2019-02-19T15:41:50.921308 #70918] ERROR -- default-amazon: Class: Kitchen::Transport::SshFailed
+E, [2019-02-19T15:41:50.921328 #70918] ERROR -- default-amazon: Message: SSH session could not be established
+E, [2019-02-19T15:41:50.921349 #70918] ERROR -- default-amazon: ----------------------
+E, [2019-02-19T15:41:50.921369 #70918] ERROR -- default-amazon: ------Backtrace-------
+E, [2019-02-19T15:41:50.921389 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:95:in `rescue in call'
+E, [2019-02-19T15:41:50.921410 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:71:in `call'
+E, [2019-02-19T15:41:50.921436 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2019-02-19T15:41:50.921457 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:551:in `synchronize_or_call'
+E, [2019-02-19T15:41:50.921478 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-02-19T15:41:50.921498 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2019-02-19T15:41:50.921519 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2019-02-19T15:41:50.921540 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2019-02-19T15:41:50.921560 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-02-19T15:41:50.921592 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-02-19T15:41:50.921613 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-02-19T15:41:50.921634 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2019-02-19T15:41:50.921659 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-02-19T15:41:50.921680 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:140:in `converge'
+E, [2019-02-19T15:41:50.921701 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-02-19T15:41:50.921739 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-02-19T15:41:50.921760 #70918] ERROR -- default-amazon: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-02-19T15:41:50.921781 #70918] ERROR -- default-amazon: ----End Backtrace-----

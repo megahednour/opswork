@@ -1,0 +1,10 @@
+Vagrant.configure("2") do |c|
+  c.berkshelf.enabled = false if Vagrant.has_plugin?("vagrant-berkshelf")
+  c.vm.box = "hashicorp/precise64"
+  c.vm.hostname = "default-hashicorp-precise64.vagrantup.com"
+  c.vm.synced_folder ".", "/vagrant", disabled: true
+  c.vm.provider :virtualbox do |p|
+    p.name = "kitchen-manage_user-default-hashicorp-precise64"
+    p.customize ["modifyvm", :id, "--audio", "none"]
+  end
+end

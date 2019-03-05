@@ -1,0 +1,118 @@
+I, [2019-03-05T11:30:34.823268 #605]  INFO -- default-hashicorp-precise64: -----> Cleaning up any prior instances of <default-hashicorp-precise64>
+I, [2019-03-05T11:30:34.825694 #605]  INFO -- default-hashicorp-precise64: -----> Destroying <default-hashicorp-precise64>...
+I, [2019-03-05T11:30:41.176724 #605]  INFO -- default-hashicorp-precise64: ==> default: Destroying VM and associated drives...
+I, [2019-03-05T11:30:41.553937 #605]  INFO -- default-hashicorp-precise64: Vagrant instance <default-hashicorp-precise64> destroyed.
+I, [2019-03-05T11:30:41.557228 #605]  INFO -- default-hashicorp-precise64: Finished destroying <default-hashicorp-precise64> (0m6.73s).
+I, [2019-03-05T11:30:41.557738 #605]  INFO -- default-hashicorp-precise64: -----> Testing <default-hashicorp-precise64>
+I, [2019-03-05T11:30:41.557940 #605]  INFO -- default-hashicorp-precise64: -----> Creating <default-hashicorp-precise64>...
+I, [2019-03-05T11:30:44.057699 #605]  INFO -- default-hashicorp-precise64: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2019-03-05T11:30:44.272631 #605]  INFO -- default-hashicorp-precise64: ==> default: Importing base box 'hashicorp/precise64'...
+I, [2019-03-05T11:30:52.742947 #605]  INFO -- default-hashicorp-precise64: [KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2019-03-05T11:30:52.981186 #605]  INFO -- default-hashicorp-precise64: ==> default: Checking if box 'hashicorp/precise64' version '1.1.0' is up to date...
+I, [2019-03-05T11:30:53.899078 #605]  INFO -- default-hashicorp-precise64: ==> default: Setting the name of the VM: kitchen-install_pkg-default-hashicorp-precise64
+I, [2019-03-05T11:30:55.492269 #605]  INFO -- default-hashicorp-precise64: ==> default: Clearing any previously set network interfaces...
+I, [2019-03-05T11:30:55.576141 #605]  INFO -- default-hashicorp-precise64: ==> default: Preparing network interfaces based on configuration...
+I, [2019-03-05T11:30:55.577240 #605]  INFO -- default-hashicorp-precise64:     default: Adapter 1: nat
+I, [2019-03-05T11:30:55.691711 #605]  INFO -- default-hashicorp-precise64: ==> default: Forwarding ports...
+I, [2019-03-05T11:30:55.841575 #605]  INFO -- default-hashicorp-precise64:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2019-03-05T11:30:56.139172 #605]  INFO -- default-hashicorp-precise64: ==> default: Running 'pre-boot' VM customizations...
+I, [2019-03-05T11:30:56.225107 #605]  INFO -- default-hashicorp-precise64: ==> default: Booting VM...
+I, [2019-03-05T11:30:56.869022 #605]  INFO -- default-hashicorp-precise64: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2019-03-05T11:30:57.599449 #605]  INFO -- default-hashicorp-precise64:     default: SSH address: 127.0.0.1:2222
+I, [2019-03-05T11:30:57.599769 #605]  INFO -- default-hashicorp-precise64:     default: SSH username: vagrant
+I, [2019-03-05T11:30:57.600065 #605]  INFO -- default-hashicorp-precise64:     default: SSH auth method: private key
+I, [2019-03-05T11:31:13.850670 #605]  INFO -- default-hashicorp-precise64:     default: 
+I, [2019-03-05T11:31:13.850808 #605]  INFO -- default-hashicorp-precise64:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2019-03-05T11:31:13.850893 #605]  INFO -- default-hashicorp-precise64:     default: this with a newly generated keypair for better security.
+I, [2019-03-05T11:31:14.550588 #605]  INFO -- default-hashicorp-precise64:     default: 
+I, [2019-03-05T11:31:14.550693 #605]  INFO -- default-hashicorp-precise64:     default: Inserting generated public key within guest...
+I, [2019-03-05T11:31:14.657200 #605]  INFO -- default-hashicorp-precise64:     default: Removing insecure key from the guest if it's present...
+I, [2019-03-05T11:31:14.791228 #605]  INFO -- default-hashicorp-precise64:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2019-03-05T11:31:15.937339 #605]  INFO -- default-hashicorp-precise64: ==> default: Machine booted and ready!
+I, [2019-03-05T11:31:15.938273 #605]  INFO -- default-hashicorp-precise64: ==> default: Checking for guest additions in VM...
+I, [2019-03-05T11:31:16.014342 #605]  INFO -- default-hashicorp-precise64:     default: The guest additions on this VM do not match the installed version of
+I, [2019-03-05T11:31:16.014468 #605]  INFO -- default-hashicorp-precise64:     default: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2019-03-05T11:31:16.014531 #605]  INFO -- default-hashicorp-precise64:     default: prevent things such as shared folders from working properly. If you see
+I, [2019-03-05T11:31:16.014594 #605]  INFO -- default-hashicorp-precise64:     default: shared folder errors, please make sure the guest additions within the
+I, [2019-03-05T11:31:16.014665 #605]  INFO -- default-hashicorp-precise64:     default: virtual machine match the version of VirtualBox you have installed on
+I, [2019-03-05T11:31:16.014729 #605]  INFO -- default-hashicorp-precise64:     default: your host and reload your VM.
+I, [2019-03-05T11:31:16.014772 #605]  INFO -- default-hashicorp-precise64:     default: 
+I, [2019-03-05T11:31:16.014815 #605]  INFO -- default-hashicorp-precise64:     default: Guest Additions Version: 4.2.0
+I, [2019-03-05T11:31:16.014857 #605]  INFO -- default-hashicorp-precise64:     default: VirtualBox Version: 6.0
+I, [2019-03-05T11:31:16.018051 #605]  INFO -- default-hashicorp-precise64: ==> default: Setting hostname...
+I, [2019-03-05T11:31:20.074259 #605]  INFO -- default-hashicorp-precise64: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2019-03-05T11:31:24.942172 #605]  INFO -- default-hashicorp-precise64: [SSH] Established
+I, [2019-03-05T11:31:24.942705 #605]  INFO -- default-hashicorp-precise64: Vagrant instance <default-hashicorp-precise64> created.
+I, [2019-03-05T11:31:24.943671 #605]  INFO -- default-hashicorp-precise64: Finished creating <default-hashicorp-precise64> (0m43.38s).
+I, [2019-03-05T11:31:24.944159 #605]  INFO -- default-hashicorp-precise64: -----> Converging <default-hashicorp-precise64>...
+I, [2019-03-05T11:31:24.945181 #605]  INFO -- default-hashicorp-precise64: Preparing files for transfer
+I, [2019-03-05T11:31:24.945384 #605]  INFO -- default-hashicorp-precise64: Preparing dna.json
+I, [2019-03-05T11:31:24.947428 #605]  INFO -- default-hashicorp-precise64: Preparing current project directory as a cookbook
+I, [2019-03-05T11:31:24.963819 #605]  INFO -- default-hashicorp-precise64: Removing non-cookbook files before transfer
+I, [2019-03-05T11:31:24.974136 #605]  INFO -- default-hashicorp-precise64: Preparing solo.rb
+I, [2019-03-05T11:31:24.994772 #605]  INFO -- default-hashicorp-precise64: -----> Installing Chef Omnibus (install only if missing)
+I, [2019-03-05T11:31:24.996427 #605]  INFO -- default-hashicorp-precise64: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2019-03-05T11:31:24.996504 #605]  INFO -- default-hashicorp-precise64: Trying wget...
+I, [2019-03-05T11:31:25.289104 #605]  INFO -- default-hashicorp-precise64: Download complete.
+I, [2019-03-05T11:31:25.316774 #605]  INFO -- default-hashicorp-precise64: ubuntu 12.04 x86_64
+I, [2019-03-05T11:31:25.317695 #605]  INFO -- default-hashicorp-precise64: Getting information for chef stable  for ubuntu...
+I, [2019-03-05T11:31:25.318407 #605]  INFO -- default-hashicorp-precise64: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=12.04&m=x86_64
+I, [2019-03-05T11:31:25.319154 #605]  INFO -- default-hashicorp-precise64:   to file /tmp/install.sh.1307/metadata.txt
+I, [2019-03-05T11:31:25.321384 #605]  INFO -- default-hashicorp-precise64: trying wget...
+I, [2019-03-05T11:31:25.402787 #605]  INFO -- default-hashicorp-precise64: sha1	3eef728d8a096b6fce191216b51ba5fe4b064ea8
+I, [2019-03-05T11:31:25.402893 #605]  INFO -- default-hashicorp-precise64: sha256	df7201e5fb5113b8f68caa0cf4172dd7004282e947b449e0eeb094ea6e630227
+I, [2019-03-05T11:31:25.402935 #605]  INFO -- default-hashicorp-precise64: url	https://packages.chef.io/files/stable/chef/13.4.24/ubuntu/12.04/chef_13.4.24-1_amd64.deb
+I, [2019-03-05T11:31:25.403297 #605]  INFO -- default-hashicorp-precise64: version	13.4.24
+I, [2019-03-05T11:31:25.405886 #605]  INFO -- default-hashicorp-precise64: downloaded metadata file looks valid...
+I, [2019-03-05T11:31:25.417966 #605]  INFO -- default-hashicorp-precise64: downloading https://packages.chef.io/files/stable/chef/13.4.24/ubuntu/12.04/chef_13.4.24-1_amd64.deb
+I, [2019-03-05T11:31:25.418445 #605]  INFO -- default-hashicorp-precise64:   to file /tmp/install.sh.1307/chef_13.4.24-1_amd64.deb
+I, [2019-03-05T11:31:25.419442 #605]  INFO -- default-hashicorp-precise64: trying wget...
+I, [2019-03-05T11:31:56.193726 #605]  INFO -- default-hashicorp-precise64: Comparing checksum with sha256sum...
+I, [2019-03-05T11:31:56.533067 #605]  INFO -- default-hashicorp-precise64: 
+I, [2019-03-05T11:31:56.533226 #605]  INFO -- default-hashicorp-precise64: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2019-03-05T11:31:56.533303 #605]  INFO -- default-hashicorp-precise64: 
+I, [2019-03-05T11:31:56.533360 #605]  INFO -- default-hashicorp-precise64: You are installing an omnibus package without a version pin.  If you are installing
+I, [2019-03-05T11:31:56.533464 #605]  INFO -- default-hashicorp-precise64: on production servers via an automated process this is DANGEROUS and you will
+I, [2019-03-05T11:31:56.533538 #605]  INFO -- default-hashicorp-precise64: be upgraded without warning on new releases, even to new major releases.
+I, [2019-03-05T11:31:56.533635 #605]  INFO -- default-hashicorp-precise64: Letting the version float is only appropriate in desktop, test, development or
+I, [2019-03-05T11:31:56.534114 #605]  INFO -- default-hashicorp-precise64: CI/CD environments.
+I, [2019-03-05T11:31:56.534201 #605]  INFO -- default-hashicorp-precise64: 
+I, [2019-03-05T11:31:56.534238 #605]  INFO -- default-hashicorp-precise64: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2019-03-05T11:31:56.534270 #605]  INFO -- default-hashicorp-precise64: 
+I, [2019-03-05T11:31:56.534664 #605]  INFO -- default-hashicorp-precise64: Installing chef 
+I, [2019-03-05T11:31:56.534735 #605]  INFO -- default-hashicorp-precise64: installing with dpkg...
+I, [2019-03-05T11:31:56.669284 #605]  INFO -- default-hashicorp-precise64: Selecting previously unselected package chef.
+I, [2019-03-05T11:31:57.345987 #605]  INFO -- default-hashicorp-precise64: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51095 files and directories currently installed.)
+I, [2019-03-05T11:31:57.348296 #605]  INFO -- default-hashicorp-precise64: Unpacking chef (from .../chef_13.4.24-1_amd64.deb) ...
+I, [2019-03-05T11:32:09.394716 #605]  INFO -- default-hashicorp-precise64: Setting up chef (13.4.24-1) ...
+I, [2019-03-05T11:32:09.520711 #605]  INFO -- default-hashicorp-precise64: Thank you for installing Chef!
+I, [2019-03-05T11:32:09.736075 #605]  INFO -- default-hashicorp-precise64: Transferring files to <default-hashicorp-precise64>
+I, [2019-03-05T11:32:11.408939 #605]  INFO -- default-hashicorp-precise64: Starting Chef Client, version 13.4.24
+I, [2019-03-05T11:32:12.988678 #605]  INFO -- default-hashicorp-precise64: Creating a new client identity for default-hashicorp-precise64 using the validator key.
+I, [2019-03-05T11:32:13.366195 #605]  INFO -- default-hashicorp-precise64: resolving cookbooks for run list: ["installpkg::install_git"]
+I, [2019-03-05T11:32:13.388834 #605]  INFO -- default-hashicorp-precise64: Synchronizing Cookbooks:
+I, [2019-03-05T11:32:13.404266 #605]  INFO -- default-hashicorp-precise64:   - installpkg (0.1.0)
+I, [2019-03-05T11:32:13.405802 #605]  INFO -- default-hashicorp-precise64: Installing Cookbook Gems:
+I, [2019-03-05T11:32:13.408430 #605]  INFO -- default-hashicorp-precise64: Compiling Cookbooks...
+I, [2019-03-05T11:32:13.413184 #605]  INFO -- default-hashicorp-precise64: Converging 1 resources
+I, [2019-03-05T11:32:13.414058 #605]  INFO -- default-hashicorp-precise64: Recipe: installpkg::install_git
+I, [2019-03-05T11:32:28.701534 #605]  INFO -- default-hashicorp-precise64:   * apt_package[git] action install
+I, [2019-03-05T11:32:28.703017 #605]  INFO -- default-hashicorp-precise64:     - install version 1:1.7.9.5-1 of package git
+I, [2019-03-05T11:32:28.826144 #605]  INFO -- default-hashicorp-precise64: 
+I, [2019-03-05T11:32:28.827139 #605]  INFO -- default-hashicorp-precise64: Running handlers:
+I, [2019-03-05T11:32:28.828190 #605]  INFO -- default-hashicorp-precise64: Running handlers complete
+I, [2019-03-05T11:32:28.831241 #605]  INFO -- default-hashicorp-precise64: Chef Client finished, 1/1 resources updated in 17 seconds
+I, [2019-03-05T11:32:28.881737 #605]  INFO -- default-hashicorp-precise64: Downloading files from <default-hashicorp-precise64>
+I, [2019-03-05T11:32:28.885253 #605]  INFO -- default-hashicorp-precise64: Finished converging <default-hashicorp-precise64> (1m3.94s).
+I, [2019-03-05T11:32:28.885441 #605]  INFO -- default-hashicorp-precise64: -----> Setting up <default-hashicorp-precise64>...
+I, [2019-03-05T11:32:28.886456 #605]  INFO -- default-hashicorp-precise64: Finished setting up <default-hashicorp-precise64> (0m0.00s).
+I, [2019-03-05T11:32:28.886619 #605]  INFO -- default-hashicorp-precise64: -----> Verifying <default-hashicorp-precise64>...
+I, [2019-03-05T11:32:28.887493 #605]  INFO -- default-hashicorp-precise64: Preparing files for transfer
+I, [2019-03-05T11:32:28.888816 #605]  INFO -- default-hashicorp-precise64: Transferring files to <default-hashicorp-precise64>
+I, [2019-03-05T11:32:28.889959 #605]  INFO -- default-hashicorp-precise64: Finished verifying <default-hashicorp-precise64> (0m0.00s).
+I, [2019-03-05T11:32:28.891589 #605]  INFO -- default-hashicorp-precise64: -----> Destroying <default-hashicorp-precise64>...
+I, [2019-03-05T11:32:34.313687 #605]  INFO -- default-hashicorp-precise64: ==> default: Forcing shutdown of VM...
+I, [2019-03-05T11:32:35.523445 #605]  INFO -- default-hashicorp-precise64: ==> default: Destroying VM and associated drives...
+I, [2019-03-05T11:32:35.917417 #605]  INFO -- default-hashicorp-precise64: Vagrant instance <default-hashicorp-precise64> destroyed.
+I, [2019-03-05T11:32:35.918891 #605]  INFO -- default-hashicorp-precise64: Finished destroying <default-hashicorp-precise64> (0m7.03s).
+I, [2019-03-05T11:32:35.920143 #605]  INFO -- default-hashicorp-precise64: Finished testing <default-hashicorp-precise64> (2m1.10s).

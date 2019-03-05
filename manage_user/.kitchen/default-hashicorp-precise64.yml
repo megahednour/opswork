@@ -1,0 +1,7 @@
+---
+hostname: 127.0.0.1
+port: '2222'
+username: vagrant
+ssh_key: "/Users/nourmegahed/Desktop/Devops/chef/Learning Chef /opsworks_cookbooks/manage_user/.kitchen/kitchen-vagrant/default-hashicorp-precise64/.vagrant/machines/default/virtualbox/private_key"
+last_action: converge
+last_error: Kitchen::ActionFailed

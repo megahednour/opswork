@@ -1,0 +1,106 @@
+I, [2019-02-19T11:27:54.197186 #5577]  INFO -- default-nour-trusty64: -----> Creating <default-nour-trusty64>...
+I, [2019-02-19T11:27:57.618555 #5577]  INFO -- default-nour-trusty64: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2019-02-19T11:27:57.866637 #5577]  INFO -- default-nour-trusty64: ==> default: Box 'nour/trusty64' could not be found. Attempting to find and install...
+I, [2019-02-19T11:27:57.866782 #5577]  INFO -- default-nour-trusty64:     default: Box Provider: virtualbox
+I, [2019-02-19T11:27:57.866916 #5577]  INFO -- default-nour-trusty64:     default: Box Version: >= 0
+I, [2019-02-19T11:28:01.460951 #5577]  INFO -- default-nour-trusty64: The box 'nour/trusty64' could not be found or
+I, [2019-02-19T11:28:01.463453 #5577]  INFO -- default-nour-trusty64: could not be accessed in the remote catalog. If this is a private
+I, [2019-02-19T11:28:01.463561 #5577]  INFO -- default-nour-trusty64: box on HashiCorp's Vagrant Cloud, please verify you're logged in via
+I, [2019-02-19T11:28:01.463615 #5577]  INFO -- default-nour-trusty64: `vagrant login`. Also, please double-check the name. The expanded
+I, [2019-02-19T11:28:01.463669 #5577]  INFO -- default-nour-trusty64: URL and error message are shown below:
+I, [2019-02-19T11:28:01.463803 #5577]  INFO -- default-nour-trusty64: 
+I, [2019-02-19T11:28:01.464978 #5577]  INFO -- default-nour-trusty64: URL: ["https://vagrantcloud.com/nour/trusty64"]
+I, [2019-02-19T11:28:01.465070 #5577]  INFO -- default-nour-trusty64: Error: The requested URL returned error: 404 Not Found
+E, [2019-02-19T11:28:01.500323 #5577] ERROR -- default-nour-trusty64: Create failed on instance <default-nour-trusty64>.
+E, [2019-02-19T11:28:01.500673 #5577] ERROR -- default-nour-trusty64: ------Exception-------
+E, [2019-02-19T11:28:01.500755 #5577] ERROR -- default-nour-trusty64: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2019-02-19T11:28:01.500816 #5577] ERROR -- default-nour-trusty64: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'nour/trusty64' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+STDERR: The box 'nour/trusty64' could not be found or
+could not be accessed in the remote catalog. If this is a private
+box on HashiCorp's Vagrant Cloud, please verify you're logged in via
+`vagrant login`. Also, please double-check the name. The expanded
+URL and error message are shown below:
+
+URL: ["https://vagrantcloud.com/nour/trusty64"]
+Error: The requested URL returned error: 404 Not Found
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2019-02-19T11:28:01.500877 #5577] ERROR -- default-nour-trusty64: ----------------------
+E, [2019-02-19T11:28:01.500938 #5577] ERROR -- default-nour-trusty64: ------Backtrace-------
+E, [2019-02-19T11:28:01.500993 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2019-02-19T11:28:01.501054 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/shell_out.rb:58:in `run_command'
+E, [2019-02-19T11:28:01.501120 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:455:in `run_command'
+E, [2019-02-19T11:28:01.501178 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:402:in `run'
+E, [2019-02-19T11:28:01.501374 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:486:in `run_vagrant_up'
+E, [2019-02-19T11:28:01.501463 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:112:in `create'
+E, [2019-02-19T11:28:01.501609 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:484:in `public_send'
+E, [2019-02-19T11:28:01.501684 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:484:in `block in perform_action'
+E, [2019-02-19T11:28:01.501761 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:548:in `block in synchronize_or_call'
+E, [2019-02-19T11:28:01.501832 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:546:in `synchronize'
+E, [2019-02-19T11:28:01.501901 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:546:in `synchronize_or_call'
+E, [2019-02-19T11:28:01.501970 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-02-19T11:28:01.502039 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2019-02-19T11:28:01.502104 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2019-02-19T11:28:01.502159 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:484:in `perform_action'
+E, [2019-02-19T11:28:01.502227 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:394:in `create_action'
+E, [2019-02-19T11:28:01.502305 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-02-19T11:28:01.502364 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-02-19T11:28:01.502433 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-02-19T11:28:01.502498 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2019-02-19T11:28:01.502572 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-02-19T11:28:01.502637 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:140:in `converge'
+E, [2019-02-19T11:28:01.502704 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-02-19T11:28:01.502761 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-02-19T11:28:01.502824 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-02-19T11:28:01.502882 #5577] ERROR -- default-nour-trusty64: ----End Backtrace-----
+E, [2019-02-19T11:28:01.502935 #5577] ERROR -- default-nour-trusty64: ---Nested Exception---
+E, [2019-02-19T11:28:01.502991 #5577] ERROR -- default-nour-trusty64: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2019-02-19T11:28:01.503042 #5577] ERROR -- default-nour-trusty64: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'nour/trusty64' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+STDERR: The box 'nour/trusty64' could not be found or
+could not be accessed in the remote catalog. If this is a private
+box on HashiCorp's Vagrant Cloud, please verify you're logged in via
+`vagrant login`. Also, please double-check the name. The expanded
+URL and error message are shown below:
+
+URL: ["https://vagrantcloud.com/nour/trusty64"]
+Error: The requested URL returned error: 404 Not Found
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2019-02-19T11:28:01.503179 #5577] ERROR -- default-nour-trusty64: ----------------------
+E, [2019-02-19T11:28:01.503239 #5577] ERROR -- default-nour-trusty64: ------Backtrace-------
+E, [2019-02-19T11:28:01.503289 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2019-02-19T11:28:01.503347 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/shell_out.rb:58:in `run_command'
+E, [2019-02-19T11:28:01.503405 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:455:in `run_command'
+E, [2019-02-19T11:28:01.503456 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:402:in `run'
+E, [2019-02-19T11:28:01.503504 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:486:in `run_vagrant_up'
+E, [2019-02-19T11:28:01.503555 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:112:in `create'
+E, [2019-02-19T11:28:01.503604 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:484:in `public_send'
+E, [2019-02-19T11:28:01.503653 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:484:in `block in perform_action'
+E, [2019-02-19T11:28:01.503745 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:548:in `block in synchronize_or_call'
+E, [2019-02-19T11:28:01.503802 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:546:in `synchronize'
+E, [2019-02-19T11:28:01.503860 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:546:in `synchronize_or_call'
+E, [2019-02-19T11:28:01.503922 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-02-19T11:28:01.503976 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2019-02-19T11:28:01.504019 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2019-02-19T11:28:01.504059 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:484:in `perform_action'
+E, [2019-02-19T11:28:01.504102 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:394:in `create_action'
+E, [2019-02-19T11:28:01.504144 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-02-19T11:28:01.504183 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-02-19T11:28:01.504269 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-02-19T11:28:01.504321 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2019-02-19T11:28:01.504364 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-02-19T11:28:01.504405 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:140:in `converge'
+E, [2019-02-19T11:28:01.504447 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-02-19T11:28:01.504487 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-02-19T11:28:01.504559 #5577] ERROR -- default-nour-trusty64: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-02-19T11:28:01.505585 #5577] ERROR -- default-nour-trusty64: ----End Backtrace-----
