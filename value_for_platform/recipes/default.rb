@@ -6,7 +6,7 @@
 
 data_dir = value_for_platform(
  "centos" => { "default" => "/home/www/shared" },
- "ubuntu" => { "default" => "/home/www/data" ),
+ "ubuntu" => { "default" => "/home/www/data" },
  "default" => "/srv/www/config"
 )
 directory data_dir do 
