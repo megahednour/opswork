@@ -8,7 +8,7 @@ directory "/srv/www/nour" do
     owner 'ubuntu'
     group 'ubuntu'
     recursive true
-    actio :create 
+    action :create 
 end 
 
 cookbook_file "/srv/www/nour/test.json" do
