@@ -28,8 +28,6 @@ template "/home/ubuntu/test" do
   source "data2.json.erb"
   mode 0644
   variables (
-      :name => "Nour",
-      :DOB => 05/03/1983,
       :boolean => true,
       :number_2 => 3
   )
