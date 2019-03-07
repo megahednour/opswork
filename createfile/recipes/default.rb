@@ -29,7 +29,7 @@ template "/home/ubuntu/data2.json" do
   mode 0644
   variables (
       :a_boolean => true,
-      :dob => 03/05/1983,
+      :dob => "03_05_1983",
       :a_string => "string"
   )
   only_if {node['createfile']['install_file']}
