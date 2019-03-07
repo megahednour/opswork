@@ -14,7 +14,7 @@ end
 
 
 template "/srv/www/shared/data.json" do
-  source "data.json.erb"
+  source "data.json.erb" # on my local system
   mode 0644
   variables(
     :a_boolean_var => true,
@@ -22,3 +22,16 @@ template "/srv/www/shared/data.json" do
   )
   only_if {node['createfile']['install_file']}
 end
+
+
+template "/home/ubuntu/test" do
+  source "data2.json.erb"
+  mode 0644
+  variables (
+      :name => "Nour"
+      :DOB => 05/03/1983
+      :boolean => true
+      :number_2 => 3
+  )
+  only if {node['createfile']['installfile']}
+end 
