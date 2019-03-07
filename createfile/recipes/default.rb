@@ -31,5 +31,5 @@ template "/home/ubuntu/test" do
       :a_boolean => true,
       :a_string => "string"
   )
-  only if {node['createfile']['installfile']}
+  only if {node['createfile']['install_file']}
 end 
