@@ -27,7 +27,7 @@ end
 template "/home/ubuntu/data2.json" do
   source "data2.json.erb"
   mode 0644
-  variables (
+  variables(
       :a_boolean => true,
       :a_dob => "03_05_1983",
       :a_string => "string"
