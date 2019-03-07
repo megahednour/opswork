@@ -29,7 +29,7 @@ template "/srv/www/shared/data.json" do
     source "data.json.erb"
     mode 0644
     variables(
-        :a_boolean => true
+        :a_boolean => true,
         :a_string => "somestring"
     )
 only_if {node['createfile']['install_file']}
