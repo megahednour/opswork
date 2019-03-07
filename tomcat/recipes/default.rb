@@ -34,3 +34,4 @@ template "/srv/www/shared/data.json" do
     )
 only_if {node['createfile']['install_file']}
 notifies :restart, resources(:service => 'tomcat')
+end
