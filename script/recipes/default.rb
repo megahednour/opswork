@@ -19,7 +19,6 @@ end
 
 execute "touchfile" do
     user "root"
-    mode 0755
     cwd "/tmp"
     command "./touchfile"
 end
