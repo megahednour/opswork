@@ -16,3 +16,10 @@ bash "install_something" do
         File.exists?("/tmp/somefile")
     end
 end 
+
+execute "touchfile" do
+    user "root"
+    mode 0755
+    cwd "/tmp"
+    command "./touchfile"
+end
