@@ -24,7 +24,7 @@ template "/srv/www/shared/data.json" do
 end
 
 
-template "//ubuntu/data2.json" do
+template "/home/ubuntu/data2.json" do
   source "data2.json.erb"
   mode 0644
   variables (
