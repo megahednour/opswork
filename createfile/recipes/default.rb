@@ -24,12 +24,12 @@ template "/srv/www/shared/data.json" do
 end
 
 
-template "/home/ubuntu/test" do
+template "//ubuntu/data2.json" do
   source "data2.json.erb"
   mode 0644
   variables (
       :a_boolean => true,
       :a_string => "string"
   )
-  only if {node['createfile']['install_file']}
+  only_if {node['createfile']['install_file']}
 end 
